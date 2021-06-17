@@ -1,0 +1,90 @@
+<h1>Task To Solve:</h1>
+<div class="container">
+    <div class="row">
+      <div class="col">
+       <img src="https://global-uploads.webflow.com/5f6e16afd274a43996712135/5f7093b7713f782d9c466bcc_why-1.png" alt="">
+      </div>
+      <div class="col">
+      <h2>Consecutive prime sum:</h2>
+      <p>The prime 41, can be written as the sum of six consecutive primes:<br><br>
+
+        41 = 2 + 3 + 5 + 7 + 11 + 13<br><br>
+        This is the longest sum of consecutive primes that adds to a prime below one-hundred.<br><br>
+        
+        The longest sum of consecutive primes below one-thousand that adds to a prime, contains 21 terms, and is equal to 953.<br><br>
+        
+        Which prime, below one-million, can be written as the sum of the most consecutive primes?<br><br></p>
+      </div>
+    </div>
+
+<br><br>
+ 
+    <div class="row">
+      <div class="col">
+      <h3>Solution:</h3>
+      <p>
+        Given a list of prime numbers and a lookup table to check if a certain sum<br><br> is prime is the key to solve this problem.<br><br>
+         We can calculate both properties with a simple sieve approach:
+      </p>
+      </div>
+      <div class="col">
+       <img src="https://global-uploads.webflow.com/5f6e16afd274a43996712135/5f7c411433a3876202cf211f_Hp1.png" alt="">
+    </div>
+    </div>
+   
+  </div>
+  <br>
+  <mat-tab-group  mat-align-tabs="center">
+    <mat-tab label="Step 1"><div class="container">
+        <div class="row">
+          <div class="col">
+            <br>
+           <img src="assets\Capture.PNG" alt="" style="border-radius: 20px; ">
+          </div>
+          <div class="col">
+            <br>
+          <h2>Organise:</h2>
+          <p>Dettermin Prime and not Prime numbers.</p>
+          </div>
+        </div>
+      </div> 
+    </mat-tab>
+    <mat-tab label="Step 2"><div class="row">
+        <div class="col">
+            <br>
+         <img src="assets\Caputure 2.PNG" alt="" style="border-radius: 20px;margin: 3px;">
+        </div>
+        <div class="col">
+            <br>
+        <h2>Walk through every prime number:</h2>
+        <p>We now can now walk through every prime number and naively sum as far as we can.<br><br>  
+            If we reach the limit of a million, we can break the inner loop early.<br><br>
+             If we have found a new longest sequence of prime numbers that form a prime itself,<br> we update our statistics,
+              which then looks like this:</p>
+        </div>
+
+      </div>
+   
+</mat-tab>
+
+    <mat-tab label="Step 3"> <div class="row">
+        <div class="col">
+            
+                <div class="vertical-center">
+                  <button class="btn" (click)="Execute()">Execute code</button>
+                </div>
+              
+        </div>
+        <div class="col">
+        <br>
+        <h2>Final Step:</h2>
+        <p>This programm runs in 24ms, where the most time is spend on generating the prime tables and not the actual algorithm.</p>
+        <h4>Press the button on your left.</h4>
+       <img src="https://static.wixstatic.com/media/ce7132_38fcb1f993924bc4a6cb67333fa43dce~mv2.gif" alt="" style="height: 200px;">
+        </div>
+      </div>
+  
+</mat-tab>
+
+  </mat-tab-group>
+  <br>

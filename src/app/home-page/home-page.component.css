@@ -1,0 +1,65 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+.toolbar{
+  
+  font-size: 19px;
+  background-color: teal;
+  color: white;
+  position: sticky;
+  position: -webkit-sticky; 
+  top: 0;
+  z-index: 1000; 
+  box-shadow: teal 0px 0.5px 10px 2px;
+
+}
+
+a{
+  color: white;
+  text-decoration: none; 
+  font-size: 15px;
+  border:solid  1px;
+  border-radius: 20px;
+  padding: 4px;
+}
+a:hover {
+  padding: 4px;
+  border-radius: 20px;
+  background-color: indianred;
+cursor: pointer;
+box-shadow: 5px 3px 10px ;
+transition: 1.5s;
+-webkit-animation: mover 2s infinite alternate;
+animation: mover 1s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+0% {
+  transform: translateY(2);
+}
+
+100% {
+  transform: translateY(-5px);
+}
+}
+
+@keyframes mover {
+0% {
+  transform: translateY(0);
+}
+
+100% {
+  transform: translateY(-5px);
+}
+}
+button{
+  border: none;
+  background-color: teal;
+  color: white;
+
+ 
+}
+button:hover{
+  color: indianred;
+  text-decoration: underline;
+}

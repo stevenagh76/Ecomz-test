@@ -1,0 +1,40 @@
+form{
+    text-align: center;
+    margin: 20px;
+} 
+.example-full-width{
+  margin: 10px;  
+}
+button{
+    border: none;
+    background-color: indianred;
+    padding: 5px;
+    color: white;
+    border-radius: 20px;
+}
+table {
+   
+    width: 100%;
+
+  }
+.result h1{
+  text-align: center;
+  background-color: teal;
+  color: white;
+  font-weight: 500;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+}
+.dispres h2{
+  text-align: center;
+  margin-right: 35%;
+  margin-left: 35%;
+border-radius: 20px;
+padding: 30px;
+background-color: indianred;
+color: white;
+
+
+
+}

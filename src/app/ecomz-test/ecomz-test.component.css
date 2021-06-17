@@ -1,0 +1,45 @@
+h1{ 
+    font-size: 2.5rem;
+    margin: 40px;
+    color: indianred;
+    font-weight: 600;
+    text-align: center;
+}
+h3{
+    text-align: center;
+    font-size: 1.5rem;
+    color: turquoise;
+    font-weight: 500;
+}
+.steps{
+    margin: 100px;
+
+}
+
+.vertical-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+ 
+}
+.vertical-center button{
+
+    width: 50%;
+    height: 50%;
+    border-radius: 90px;
+   border:none;
+    background-color: indianred ;
+    color: white;
+    font-size: 2rem;
+
+}
+.vertical-center button:hover{
+ background-color:turquoise;
+transition: 2s;
+
+}
+
+img{
+    height: 270px;
+}

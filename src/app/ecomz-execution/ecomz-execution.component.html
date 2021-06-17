@@ -1,0 +1,49 @@
+<form class="example-form" #Post="ngForm">
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Full name</mat-label>
+      <input matInput placeholder="Ex. Steven Aghnatios" value="Unknown" name="Fullname"ngModel required> 
+    </mat-form-field>
+  
+    <mat-form-field class="example-full-width">
+      <mat-label>Leave a comment</mat-label>
+      <input matInput placeholder="Ex. Hire Steven Aghnatios He's a great." name="comment" ngModel required>
+    </mat-form-field>
+
+    <h1> Enter count limit:</h1>
+    <mat-form-field class="example-full-width">
+        <mat-label>Enter number</mat-label>
+        <input matInput type="number" placeholder="Ex. 1000000" value="1000000" name="value" ngModel required>
+    </mat-form-field>
+      <button  type="submit" [disabled]="Post.invalid" (click)="onSubmit(Post.value)" >Click</button>
+  </form>
+  <div class="result">
+<h1>Result: ⬇️</h1>
+
+<div class="dispres">
+    <h2 id="finalresult">Loading...</h2>
+</div>
+<hr>
+
+  </div>
+<div style="height: 90%;">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Full name</th>
+        <th scope="col">Comments</th>
+        <th scope="col">Entered Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let response of response">
+        <th scope="row">-</th>
+        <td>{{response.Fullname}}</td>
+        <td>{{response.comment}}</td>
+        <td>{{response.value}}</td>
+      </tr>
+  
+    </tbody>
+  </table>
+</div>
